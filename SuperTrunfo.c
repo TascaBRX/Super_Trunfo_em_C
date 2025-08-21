@@ -1,4 +1,4 @@
-// objetivo é construir a base do nosso jogo Super Trunfo de Países: um sistema para cadastrar as cartas com informações sobre as cidades.
+// no desafio nivel novato o objetivo é construir a base do nosso jogo Super Trunfo de Países: um sistema para cadastrar as cartas com informações sobre as cidades.
 // Instruções:
 // Criar um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
 //    - Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
@@ -75,4 +75,5 @@ int main(){
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
 
   return 0; // Retorna 0 para indicar que o programa terminou com sucesso
+
 }
