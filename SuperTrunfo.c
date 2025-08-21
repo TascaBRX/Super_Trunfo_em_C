@@ -22,29 +22,29 @@ int main(){
 
   // Entrada dos dados da carta 1
   printf("=====Cadastro da Carta 1=====\n");
-  printf("Digite o estado (A-H) da carta 1: ");
-  scanf(" %2s", estado1);
-  printf("Digite o código da carta 1 (ex: A01): ");
-  scanf("%3s", codigoCarta1);
-  printf("Digite o nome da cidade da carta 1: ");
+  printf("Digite o estado (A-H) da carta 1: "); // Solicita ao usuario o estado
+  scanf(" %2s", estado1); // Lê até 2 caracteres para o estado
+  printf("Digite o código da carta 1 (ex: A01): "); // Solicita ao usuario o código da carta
+  scanf("%3s", codigoCarta1); // Lê até 3 caracteres para o código da carta
+  printf("Digite o nome da cidade da carta 1: "); // Solicita ao usuario o nome da cidade
   scanf(" %[^\n]", nomeCidade1); // Lê até a nova linha
-  printf("Digite a população da cidade da carta 1: ");
-  scanf("%d", &populacao1);
-  printf("Digite a área da cidade da carta 1 (em km²): ");
-  scanf("%f", &area1);
-  printf("Digite o PIB da cidade da carta 1: ");
-  scanf("%f", &pib1);
-  printf("Digite o número de pontos turísticos da cidade da carta 1: ");
-  scanf("%d", &pontosTuristicos1);
+  printf("Digite a população da cidade da carta 1: "); // Solicita ao usuario a população
+  scanf("%d", &populacao1); // Lê um número inteiro para a população
+  printf("Digite a área da cidade da carta 1 (em km²): "); // Solicita ao usuario a área
+  scanf("%f", &area1); // Lê um número de ponto flutuante para a área
+  printf("Digite o PIB da cidade da carta 1: "); // Solicita ao usuario o PIB
+  scanf("%f", &pib1); // Lê um número de ponto flutuante para o PIB
+  printf("Digite o número de pontos turísticos da cidade da carta 1: "); // Solicita ao usuario o número de pontos turísticos
+  scanf("%d", &pontosTuristicos1); // Lê um número inteiro para o número de pontos turísticos
 
-  // entrada dos dados da carta 2
-  printf("\n=====Cadastro da Carta 2=====\n");
+  // entrada dos dados da carta 2 seguindo os mesmos passos da carta 1
+  printf("\n=====Cadastro da Carta 2=====\n"); 
   printf("Digite o estado (A-H) da carta 2: ");
   scanf(" %2s", estado2);
   printf("Digite o código da carta 2 (ex: A01): ");
   scanf("%3s", codigoCarta2);
   printf("Digite o nome da cidade da carta 2: ");
-  scanf(" %[^\n]", nomeCidade2); // Lê até a nova linha
+  scanf(" %[^\n]", nomeCidade2); 
   printf("Digite a população da cidade da carta 2: ");
   scanf("%d", &populacao2);
   printf("Digite a área da cidade da carta 2 (em km²): ");
@@ -55,23 +55,24 @@ int main(){
   scanf("%d", &pontosTuristicos2);
 
   // saída dos dados da carta 1
-  printf("\nCarta 1:\n");
-  printf("Estado: %s\n", estado1);
-  printf("Código da Carta: %s\n", codigoCarta1);
-  printf("Nome da Cidade: %s\n", nomeCidade1);
-  printf("População: %d habitantes\n", populacao1);
-  printf("Área: %.2f km²\n", area1);
-  printf("PIB: %.2f\n", pib1, "Bilhoes de Reais");
-  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+  printf("\nCarta 1:\n"); // Exibe os dados da carta 1
+  printf("Estado: %s\n", estado1); // Exibe o estado da carta 1
+  printf("Código da Carta: %s\n", codigoCarta1); // Exibe o código da carta 1
+  printf("Nome da Cidade: %s\n", nomeCidade1); // Exibe o nome da cidade da carta 1
+  printf("População: %d habitantes\n", populacao1); // Exibe a população da carta 1
+  printf("Área: %.2f km²\n", area1); // Exibe a área da carta 1
+  printf("PIB: %.2f Bilhoes de Reais\n", pib1); // Exibe o PIB da carta 1
+  printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1); // Exibe o número de pontos turísticos da carta 1
 
-  // saída dos dados da carta 2
+  // saída dos dados da carta 2 seguindo os mesmos passos da carta 1
   printf("\nCarta 2:\n");
   printf("Estado: %s\n", estado2);
   printf("Código da Carta: %s\n", codigoCarta2);
   printf("Nome da Cidade: %s\n", nomeCidade2);
   printf("População: %d habitantes\n", populacao2);
   printf("Área: %.2f km²\n", area2);
-  printf("PIB: %.2f\n", pib2, "Bilhoes de Reais");
+  printf("PIB: %.2f Bilhoes de Reais\n", pib2);
   printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
 
+  return 0; // Retorna 0 para indicar que o programa terminou com sucesso
 }
