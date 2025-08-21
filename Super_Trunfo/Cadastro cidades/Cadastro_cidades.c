@@ -13,7 +13,7 @@
 
 int main(){
   // Declaração das variáveis da carta 1
-  char estado1[2];
+  char estado1[3];
   char codigoCarta1[4];
   char nomeCidade1[50];
   int populacao1;
@@ -22,12 +22,11 @@ int main(){
 
   // Entrada dos dados da carta 1
   printf("Digite o estado (A-H) da carta 1: ");
-  scanf(" %c", &estado1[0]);
-  estado1[1] = '\0'; // Termina a string com o caractere nulo
+  scanf(" %2s", estado1);
   printf("Digite o código da carta 1 (ex: A01): ");
-  scanf("%s", codigoCarta1);
+  scanf("%3s", codigoCarta1);
   printf("Digite o nome da cidade da carta 1: ");
-  scanf(" %c[^\n]", nomeCidade1); // Lê até a nova linha
+  scanf(" %[^\n]", nomeCidade1); // Lê até a nova linha
   printf("Digite a população da cidade da carta 1: ");
   scanf("%d", &populacao1);
   printf("Digite a área da cidade da carta 1 (em km²): ");
